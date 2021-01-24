@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.25, 8.5" name="BangDiaDataClasses">
+  <DataContextMoniker Name="/BangDiaDataClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="aaaad8ad-465e-48e4-a8cc-dc996a643a27" absoluteBounds="6.25, 4, 2, 1.5785953776041675">
+      <DataClassMoniker Name="/BangDiaDataClassesDataContext/Dia" />
+      <nestedChildShapes>
+        <elementListCompartment Id="10b42269-4a20-4dfc-ac50-8caf09153383" absoluteBounds="6.265, 4.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c2c3a089-a855-4bc2-98a1-fa712c3b2453" absoluteBounds="3.5, 4, 2, 1.5785953776041675">
+      <DataClassMoniker Name="/BangDiaDataClassesDataContext/TieuDe" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fc447e12-0c3e-4e24-8228-9c1cf9b48f9d" absoluteBounds="3.515, 4.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d345b0c8-fcbc-4326-b1b8-51193c328c28" absoluteBounds="3.5, 1, 2, 1.5785953776041668">
+      <DataClassMoniker Name="/BangDiaDataClassesDataContext/KhachHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5a3548fa-e048-481a-8835-04e24ef9e2da" absoluteBounds="3.515, 1.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bb3acd62-02c6-45dc-b26f-d1e5fd40b86b" absoluteBounds="0.75, 3.875, 2, 1.7708968098958335">
+      <DataClassMoniker Name="/BangDiaDataClassesDataContext/LoaiDia" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e8902103-c3fc-4bf0-9bc9-fb5dc289e439" absoluteBounds="0.765, 4.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f1fa0ed3-5d92-4653-a57a-9bac6278fafa" absoluteBounds="6.25, 0.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/BangDiaDataClassesDataContext/PhieuDat" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f18f5776-fbd8-4372-b6ec-4cc046b4060b" absoluteBounds="6.265, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="86b411bd-8aca-45cd-9bdb-84c4d248b4da" absoluteBounds="9, 3.375, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/BangDiaDataClassesDataContext/PhieuThue" />
+      <nestedChildShapes>
+        <elementListCompartment Id="30d0a21b-8bf0-4fae-a5f1-1e87a5d292e8" absoluteBounds="9.015, 3.835, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d0f441a4-0e2b-4941-9242-caa7bf0ec667" absoluteBounds="0.75, 6.625, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/BangDiaDataClassesDataContext/TaiKhoan" />
+      <nestedChildShapes>
+        <elementListCompartment Id="258bf848-f122-48ae-837b-cd021d98cc08" absoluteBounds="0.765, 7.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 4.78929768880208); (6.25 : 4.78929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BangDiaDataClassesDataContext/TieuDe/TieuDe_Dia" />
+      <nodes>
+        <classShapeMoniker Id="c2c3a089-a855-4bc2-98a1-fa712c3b2453" />
+        <classShapeMoniker Id="aaaad8ad-465e-48e4-a8cc-dc996a643a27" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.78929768880208); (3.5 : 4.78929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BangDiaDataClassesDataContext/LoaiDia/LoaiDia_TieuDe" />
+      <nodes>
+        <classShapeMoniker Id="bb3acd62-02c6-45dc-b26f-d1e5fd40b86b" />
+        <classShapeMoniker Id="c2c3a089-a855-4bc2-98a1-fa712c3b2453" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 1.78929768880208); (5.79166666666667 : 1.78929768880208 : JumpStart); (5.95833333333333 : 1.78929768880208 : JumpEnd); (6.25 : 1.78929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BangDiaDataClassesDataContext/KhachHang/KhachHang_PhieuDat" />
+      <nodes>
+        <classShapeMoniker Id="d345b0c8-fcbc-4326-b1b8-51193c328c28" />
+        <classShapeMoniker Id="f1fa0ed3-5d92-4653-a57a-9bac6278fafa" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4); (5.875 : 3.625); (5.875 : 1.23839684440104); (6.25 : 1.23839684440104)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BangDiaDataClassesDataContext/TieuDe/TieuDe_PhieuDat" />
+      <nodes>
+        <classShapeMoniker Id="c2c3a089-a855-4bc2-98a1-fa712c3b2453" />
+        <classShapeMoniker Id="f1fa0ed3-5d92-4653-a57a-9bac6278fafa" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 4.78929768880208); (9 : 4.78929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BangDiaDataClassesDataContext/Dia/Dia_PhieuThue" />
+      <nodes>
+        <classShapeMoniker Id="aaaad8ad-465e-48e4-a8cc-dc996a643a27" />
+        <classShapeMoniker Id="86b411bd-8aca-45cd-9bdb-84c4d248b4da" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 2.5154505625); (5.80472474596354 : 2.70965211519507 : JumpStart); (5.94527525403646 : 2.79922517173675 : JumpEnd); (6.1875 : 2.95359537760417); (6.1875 : 3); (8.625 : 3); (9 : 3.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BangDiaDataClassesDataContext/KhachHang/KhachHang_PhieuThue" />
+      <nodes>
+        <classShapeMoniker Id="d345b0c8-fcbc-4326-b1b8-51193c328c28" />
+        <classShapeMoniker Id="86b411bd-8aca-45cd-9bdb-84c4d248b4da" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

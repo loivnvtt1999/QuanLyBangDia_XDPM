@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03003FCF-AF70-46A4-980C-55D9BDE72520}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>XDPM_Nhom1_QLThueDia</RootNamespace>
+    <AssemblyName>XDPM_Nhom1_QLThueDia</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.36, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChiTietTraMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietTraMuon.Designer.cs">
+      <DependentUpon>ChiTietTraMuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoiMatKhau.Designer.cs">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GanDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GanDia.Designer.cs">
+      <DependentUpon>GanDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HuyPhiTraMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HuyPhiTraMuon.Designer.cs">
+      <DependentUpon>HuyPhiTraMuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLDia.Designer.cs">
+      <DependentUpon>QLDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLTieuDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLTieuDe.Designer.cs">
+      <DependentUpon>QLTieuDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyKhachHang.Designer.cs">
+      <DependentUpon>QuanLyKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuyTrinhTraDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuyTrinhTraDia.Designer.cs">
+      <DependentUpon>QuyTrinhTraDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuyTrinhXoaDat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuyTrinhXoaDat.Designer.cs">
+      <DependentUpon>QuyTrinhXoaDat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemDia.Designer.cs">
+      <DependentUpon>ThemDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemTieuDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemTieuDe.Designer.cs">
+      <DependentUpon>ThemTieuDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThietLapGiaThue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThietLapGiaThue.Designer.cs">
+      <DependentUpon>ThietLapGiaThue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThietLapThoiGianThue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThietLapThoiGianThue.Designer.cs">
+      <DependentUpon>ThietLapThoiGianThue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKeSoLuongDiaCuaTieuDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeSoLuongDiaCuaTieuDe.Designer.cs">
+      <DependentUpon>ThongKeSoLuongDiaCuaTieuDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKeSoLuongDiaYeuCauDat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeSoLuongDiaYeuCauDat.Designer.cs">
+      <DependentUpon>ThongKeSoLuongDiaYeuCauDat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongTinTieuDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongTinTieuDe.Designer.cs">
+      <DependentUpon>ThongTinTieuDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThueDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThueDia.Designer.cs">
+      <DependentUpon>ThueDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraDia.Designer.cs">
+      <DependentUpon>TraDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraNo.Designer.cs">
+      <DependentUpon>TraNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XemTrangThaiDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XemTrangThaiDia.Designer.cs">
+      <DependentUpon>XemTrangThaiDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XoaDatTruoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XoaDatTruoc.Designer.cs">
+      <DependentUpon>XoaDatTruoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KiemTraDiaTrong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KiemTraDiaTrong.Designer.cs">
+      <DependentUpon>KiemTraDiaTrong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DatTruoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatTruoc.Designer.cs">
+      <DependentUpon>DatTruoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKeDiaDangThue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeDiaDangThue.Designer.cs">
+      <DependentUpon>ThongKeDiaDangThue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKeDiaTraTre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeDiaTraTre.Designer.cs">
+      <DependentUpon>ThongKeDiaTraTre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKeTongNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeTongNo.Designer.cs">
+      <DependentUpon>ThongKeTongNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XemThongTinKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XemThongTinKhachHang.Designer.cs">
+      <DependentUpon>XemThongTinKhachHang.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChiTietTraMuon.resx">
+      <DependentUpon>ChiTietTraMuon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoiMatKhau.resx">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GanDia.resx">
+      <DependentUpon>GanDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HuyPhiTraMuon.resx">
+      <DependentUpon>HuyPhiTraMuon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLDia.resx">
+      <DependentUpon>QLDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLTieuDe.resx">
+      <DependentUpon>QLTieuDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyKhachHang.resx">
+      <DependentUpon>QuanLyKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuyTrinhTraDia.resx">
+      <DependentUpon>QuyTrinhTraDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuyTrinhXoaDat.resx">
+      <DependentUpon>QuyTrinhXoaDat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemDia.resx">
+      <DependentUpon>ThemDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemTieuDe.resx">
+      <DependentUpon>ThemTieuDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThietLapGiaThue.resx">
+      <DependentUpon>ThietLapGiaThue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThietLapThoiGianThue.resx">
+      <DependentUpon>ThietLapThoiGianThue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKeSoLuongDiaCuaTieuDe.resx">
+      <DependentUpon>ThongKeSoLuongDiaCuaTieuDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKeSoLuongDiaYeuCauDat.resx">
+      <DependentUpon>ThongKeSoLuongDiaYeuCauDat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongTinTieuDe.resx">
+      <DependentUpon>ThongTinTieuDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThueDia.resx">
+      <DependentUpon>ThueDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraDia.resx">
+      <DependentUpon>TraDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraNo.resx">
+      <DependentUpon>TraNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XemTrangThaiDia.resx">
+      <DependentUpon>XemTrangThaiDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XoaDatTruoc.resx">
+      <DependentUpon>XoaDatTruoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KiemTraDiaTrong.resx">
+      <DependentUpon>KiemTraDiaTrong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DatTruoc.resx">
+      <DependentUpon>DatTruoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKeDiaDangThue.resx">
+      <DependentUpon>ThongKeDiaDangThue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKeDiaTraTre.resx">
+      <DependentUpon>ThongKeDiaTraTre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKeTongNo.resx">
+      <DependentUpon>ThongKeTongNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XemThongTinKhachHang.resx">
+      <DependentUpon>XemThongTinKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{d5e2c479-544f-451c-8c2e-60860ddc8c6f}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ENTITTY\ENTITTY.csproj">
+      <Project>{d802727e-4da6-41a3-b4e7-a525df12873d}</Project>
+      <Name>ENTITTY</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>
